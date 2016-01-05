@@ -1,0 +1,7 @@
+*** Run summary:
+  2 change(s) in 1 file(s)
+  dummy.ml:
+    replace l7c17 to l7c19 by "pat_id"
+    replace l10c32 to l10c34 by "pat_id"
+    
+  

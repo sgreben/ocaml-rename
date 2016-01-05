@@ -1,0 +1,12 @@
+*** Run summary:
+  5 change(s) in 2 file(s)
+  nonempty_queue.mli:
+    replace l5c3 to l5c14 by "neq_outbox"
+    
+  nonempty_queue.ml:
+    replace l5c5 to l5c16 by "neq_outbox"
+    replace l20c14 to l20c40 by "{ neq_enqueue; neq_outbox = neq_dequeue }"
+    replace l31c36 to l31c56 by "{ q with neq_outbox = neq_dequeue }"
+    replace l28c34 to l28c73 by "{ neq_enqueue = None; neq_outbox = (L.rev l) }"
+    
+  

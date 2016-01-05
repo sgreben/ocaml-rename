@@ -1,0 +1,7 @@
+*** Run summary:
+  2 change(s) in 1 file(s)
+  dummy.ml:
+    replace l5c48 to l5c51 by "pattern"
+    replace l9c13 to l9c16 by "pattern"
+    
+  

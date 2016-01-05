@@ -1,0 +1,7 @@
+*** Run summary:
+  2 change(s) in 1 file(s)
+  simple_value.ml:
+    replace l1c5 to l1c13 by "hasBeenRenamed"
+    replace l2c15 to l2c23 by "hasBeenRenamed"
+    
+  

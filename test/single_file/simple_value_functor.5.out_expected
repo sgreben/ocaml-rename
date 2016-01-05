@@ -1,0 +1,7 @@
+*** Run summary:
+  2 change(s) in 1 file(s)
+  simple_value_functor.ml:
+    replace l7c6 to l7c16 by "renamed_value_in_F"
+    replace l14c9 to l14c22 by "F1.renamed_value_in_F"
+    
+  

@@ -1,0 +1,4 @@
+<src/**>: package(compiler-libs)
+"src": include
+"src/ocaml": include
+"src/overlay": include

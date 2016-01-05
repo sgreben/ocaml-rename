@@ -1,0 +1,7 @@
+*** Run summary:
+  2 change(s) in 1 file(s)
+  simple_value_module.ml:
+    replace l2c9 to l2c19 by "renamed_value_in_M"
+    replace l5c15 to l5c27 by "M.renamed_value_in_M"
+    
+  
