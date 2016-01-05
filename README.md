@@ -10,7 +10,7 @@ An `.mli`-aware command-line renaming tool for OCaml projects, with `undo` and s
 ocaml-rename [options] [command] [source files in dependency order]
 ```
 
-Currently, we can rename *values*, *types* and *record fields*. The following elements can't be renamed (yet): *modules*, *constructors*, *methods*.
+Currently, the tool can rename *values*, *types* and *record fields*. The following elements can't be renamed (yet): *modules*, *constructors*, *methods*.
 
 ## Example
 
