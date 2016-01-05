@@ -76,6 +76,19 @@ A symbol can be specified either by location (using `at file:line:column`) or by
 | -v {0,1,2}        | Set verbosity level (default:1)                                    |
 | -help, --help     | Display this list of options                                       |
 
+
+## Design
+
+`ocaml-rename` uses the information produced by the OCaml typer to find references, renames the corresponding AST elements, and finally pretty-prints and inserts them in-place in the source files.
+
+The main steps are:
+
+- A `compiler-libs`-powered OCaml compiler frontend parses and types the input files ([compiler_frontend.ml](src/compiler_frontend.ml))
+- The symbol to rename is found either using the final typing environment (if specified using a long identifier), or using a location-based search over Typedtree nodes ([symbol_lookup.ml](src/symbol_lookup.ml)).
+- References to a symbol are found using the coercion information collected during typing, and using a scan of the typed AST. The symbol referenced, and the AST element referencing it are both collected ([find_references.ml](src/find_references.ml)).
+- Each symbol reference is mapped to an AST change ([rename.ml](src/rename.ml)), and each AST change translated into a source file edit.
+- Finally, the source edits are grouped by file and applied ([source_change.ml](src/source_change.ml)).
+
 ## Build
 
 Dependencies: OCaml `4.02.3`, ocamlfind `1.5.6`.
